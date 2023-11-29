@@ -24,13 +24,20 @@ let qtdColunas = 3;
  let linha2 = matriz[1];
  let linha3 = matriz[2];
 
- let Matriztrocada =[
+ let matrizTrocada =[
     linha3,
     linha2,
     linha1
  ]
 
-for (let linha = 0; linha < 3; linha++) {
-    const element = array[index];
-    
-}
+ let matrizFinal = matrizTrocada;
+
+ for (let linha = 0; linha < matrizTrocada.length; linha++) {
+     matrizFinal[linha] = [
+         matrizTrocada[linha][2],
+         matrizTrocada[linha][1],
+         matrizTrocada[linha][0],
+     ];
+ }
+ 
+ console.table(matrizTrocada)
